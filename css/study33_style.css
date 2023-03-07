@@ -1,0 +1,41 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: lightcyan;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /*
+    start로 설정하면 왼쪽
+    end로 설정하면 오른쪽
+    center로 설정하면 중앙 
+    space-between은 같은 간격으로 양끝에 맞게
+    space-around는 같은 간격을 양끝에도 적용
+    space-evenly는 중첩된 간격은 제거, 양쪽 끝까지 다 동일 간격 적용
+    - 기준축에 따라 설정 방향이 달라진다. -
+    */
+    align-content: center;
+    /* 기준축의 반대축 지정
+    줄바꿈이 없을 시에는 
+    /* align-items: center; */
+}
+
+section article{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    border: 1px solid #000;
+}

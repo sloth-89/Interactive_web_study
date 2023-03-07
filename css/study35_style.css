@@ -1,0 +1,90 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 예제1 */
+/* section{
+    width: 100%;
+    background: lightcyan;
+    display: flex;
+}
+
+section article{
+    background: aqua;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #fff;
+}
+
+section article:nth-of-type(1){
+    flex-grow: 1;
+}
+
+section article:nth-of-type(2){
+    flex-grow: 2;
+}
+
+section article:nth-of-type(3){
+    flex-grow: 3;
+}
+자식 요소에게 여백을 주어 부모의 크기를 작성된 비율로 맞춘다. (1:2:3) 이런 식 */
+
+/* 예제2 */
+/* section{
+    width: 100%;
+    background: lightcyan;
+    display: flex;
+}
+
+section article{
+    width: 400px;
+    background: aqua;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #fff;
+}
+
+section article:nth-of-type(1){
+    flex-shrink: 1;
+}
+
+section article:nth-of-type(2){
+    flex-shrink: 2;
+}
+
+section article:nth-of-type(3){
+    flex-shrink: 3;
+}
+값이 커지면 커질수록 브라우저를 줄였을 때 여백이 큰 폭으로 줄어든다. */
+
+/* 예제3 */
+section{
+    width: 100%;
+    background: lightcyan;
+    display: flex;
+}
+
+section article{
+    background: aqua;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #fff;
+}
+
+section article:nth-of-type(1){
+    flex: 1;
+}
+
+section article:nth-of-type(2){
+    flex: 2;
+}
+
+section article:nth-of-type(3){
+    flex: 3;
+}
+/* 1:1:1 이런 식으로 자식 요소의 여백 비율을 맞춘다. */

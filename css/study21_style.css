@@ -1,0 +1,32 @@
+
+/* CSS 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 100px;
+    float: left;
+    border-radius: 30px;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 100px;
+    float: left;
+    border-radius: 50%;
+}

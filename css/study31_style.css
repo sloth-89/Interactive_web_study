@@ -1,0 +1,13 @@
+/* css 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

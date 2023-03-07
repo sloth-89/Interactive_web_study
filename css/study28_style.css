@@ -1,0 +1,44 @@
+
+/* css 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+article{
+    width: 400px;
+    height: 400px;
+    background: blue;
+    margin: 100px auto;
+    /* animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s; */
+    
+    animation: rotation 2s linear infinite 0s;
+    /* 한줄로 입력 가능 */
+    animation-play-state: running;
+    /* 기본값 */
+}
+
+article:hover{
+    animation-play-state: paused;
+}

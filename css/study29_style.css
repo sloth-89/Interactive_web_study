@@ -1,0 +1,33 @@
+/* css 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+article{
+    width: 500px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    /* border값 안에 pause가 되도록 */
+    padding: 50px;
+    margin: 50px auto;
+}
+
+article svg{
+    width: 100%;
+}
+
+article svg path{
+    fill: transparent;
+    stroke: red;
+    stroke-width: 3;
+    /* 배율 단위 */
+}

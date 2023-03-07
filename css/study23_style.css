@@ -1,0 +1,66 @@
+
+/* CSS 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    width: 800px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+div img{
+    width: 250px;
+    margin: 6px;
+}
+
+div img:nth-of-type(2){
+   filter: blur(3px); 
+}
+/* 흐림 - 픽셀값이 낮을 수록 블러가 없음 */
+
+div img:nth-of-type(3){
+    filter: brightness(0.5); 
+}
+/* 밝기 - 1이 기본 밝기 값, 낮추면 어두워지고 높이면 밝아짐 */
+
+div img:nth-of-type(4){
+    filter: contrast(150%); 
+ }
+/* 대비 - 100% 기본 값 */
+
+div img:nth-of-type(5){
+    filter: grayscale(100%);
+}
+/* 회색변환 - 0%가 기본 값 */
+
+div img:nth-of-type(6){
+    filter: hue-rotate(180deg);
+}
+/* 색상환돌림 - 0이 기본값, deg는 각도*/
+
+div img:nth-of-type(7){
+    filter: invert(100%);
+}
+/* 반전 - 0%가 기본값 */
+
+div img:nth-of-type(8){
+    filter: saturate(1.5);
+}
+/* 채도 - 1이 기본값 */
+
+div img:nth-of-type(9){
+    filter: sepia(100%);
+}
+/* 갈색변환 - 0이 기본값 */

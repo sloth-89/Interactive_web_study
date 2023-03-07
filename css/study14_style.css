@@ -1,0 +1,41 @@
+
+/* CSS 리셋 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    width: 800px;
+    margin: 100px auto;
+    border: 5px solid black;
+}
+
+.wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* float를 쓰고 나면 부모 태그에 꼭 넣어야한다. (버그) */
+
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: right;
+}

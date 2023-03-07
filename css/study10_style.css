@@ -1,0 +1,17 @@
+
+p{
+    border: 1px solid red;
+    height: 100px;
+}
+
+/* 블록요소는 태그는 넓이, 높이값이 변경가능하지만 인라인요소 태그는 넓이, 높이값 변경 불가(꾸며주는 요소) */
+
+strong, em{
+    border: 1px solid blue; 
+    height: 50px;
+    display: block;
+}
+/* display: inline-block을 지정하면 인라인 속성과 블록 속성을 모두 가진다.
+그래서 강제로 넓이 높이 값을 조절 해줄 수 있다. 
+display: block을 지정하면 블록 속성을 가지기 때문에 자동 줄바꿈이 된다.*/
+

@@ -1,0 +1,45 @@
+
+/* CSS 초기화 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    position: relative;
+}
+
+.wrap .left{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.wrap .right{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+}
+/* z-index는 쉽게 말하면 출력 순서 지정이다.
+원래 오브젝트는 적혀진 순서대로 아래 깔려서 출력이 되는데
+z-index를 사용하면 먼저 적힌 오브젝트를 위로 올릴 수도 있다. */
